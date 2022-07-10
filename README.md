@@ -29,6 +29,7 @@ $ yarn build
 
 # Apply prettier
 $ yarn format
+$ yarn format:fix
 
 # Apply eslint
 $ yarn lint
@@ -40,11 +41,9 @@ $ yarn lint
 
 ---
 
-- Craco
 - Emotion
-- Eslint
-- Prettier
-<!-- - I18n -->
+- Eslint, Prettier (airbnb-typescript)
+- Next-i18next (i18n)
 
 <br>
 
