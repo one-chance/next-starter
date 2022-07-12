@@ -1,7 +1,6 @@
 import { CSSObject, jsx } from '@emotion/react';
-import { HTMLAttributes, LabelHTMLAttributes } from 'react';
-
 import { colors, fontSizes, fontWeights } from '@styles/Theme';
+import { HTMLAttributes, LabelHTMLAttributes } from 'react';
 
 export type TextProps = (
   | HTMLAttributes<HTMLSpanElement>

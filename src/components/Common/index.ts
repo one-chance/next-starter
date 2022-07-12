@@ -1,27 +1,25 @@
-import { Button, type ButtonProps } from './Button';
+import { Button, ButtonProps } from './Button';
 import { Form } from './Form';
 import { Icon } from './Icon';
-import { Image, type ImageProps } from './Image';
-import { Input, type InputProps } from './Input';
-import { Svg, type SvgProps } from './Svg';
-import { Text, type TextProps } from './Text';
-import { FlexView, type FlexViewProps, View, type ViewProps } from './View';
+import { Image } from './Image';
+import { Input, InputProps } from './Input';
+import { Svg } from './Svg';
+import { Text, TextProps } from './Text';
+import { FlexView, FlexViewProps, View, ViewProps } from './View';
 
 export {
   Button,
-  ButtonProps,
+  type ButtonProps,
   FlexView,
-  FlexViewProps,
+  type FlexViewProps,
   Form,
   Icon,
   Image,
-  ImageProps,
   Input,
-  InputProps,
+  type InputProps,
   Svg,
-  SvgProps,
   Text,
-  TextProps,
+  type TextProps,
   View,
-  ViewProps,
+  type ViewProps,
 };

@@ -1,10 +1,9 @@
-import { Button, Text } from '@components/Common';
+import { Button, Text, Image } from '@components/Common';
 import type { NextPage } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 export const getStaticProps = async ({ locale }: any) => ({
@@ -27,6 +26,8 @@ const Home: NextPage = () => {
       <Button onClick={() => router.push(`/test`)}>
         <Text>언어 변경</Text>
       </Button>
+
+      {/* <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} /> */}
 
       <h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -64,7 +65,6 @@ const Home: NextPage = () => {
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
-      {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
     </>
   );
 };

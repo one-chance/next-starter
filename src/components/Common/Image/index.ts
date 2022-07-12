@@ -1,3 +1,3 @@
-import Image, { type ImageProps } from './Image';
+import Image from './Image';
 
-export { Image, ImageProps };
+export { Image };

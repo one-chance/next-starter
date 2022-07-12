@@ -1,3 +1,3 @@
-import Svg, { type SvgProps } from './Svg';
+import Svg from './Svg';
 
-export { Svg, SvgProps };
+export { Svg };

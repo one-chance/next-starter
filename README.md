@@ -20,8 +20,6 @@ yarn install
 
 ## 🎬 <b> Available Scripts </b>
 
----
-
 ### 1. Start development server
 
 ```
@@ -51,8 +49,6 @@ yarn lint
 
 ## 📜 <b> Features </b>
 
----
-
 - Emotion
 - Eslint, Prettier (airbnb-typescript)
 - Next-i18next (i18n)
@@ -61,9 +57,9 @@ yarn lint
 
 ## 🗂 <b> Components </b>
 
-### View, FlexView, Text, Input, Button, Form, Icon, Image, Svg
+- View, FlexView, Text, Input, Button, Form, Icon, Image, Svg
 
-### Accordion, Checkbox, Divider, TextField, Link, Modal, Select
+- Accordion, Checkbox, Divider, TextField, Link, Modal, Select
 
 <br>
 
