@@ -1,11 +1,13 @@
 import { CSSObject, jsx } from '@emotion/react';
-import { colors, fontSizes, fontWeights } from '@styles/Theme';
 import { HTMLAttributes, LabelHTMLAttributes } from 'react';
 
-export type Props = (
+import { colors, fontSizes, fontWeights } from '@styles/Theme';
+
+export type TextProps = (
   | HTMLAttributes<HTMLSpanElement>
   | LabelHTMLAttributes<HTMLLabelElement>
 ) & {
+  component?: string;
   xxSmall?: boolean;
   xSmall?: boolean;
   small?: boolean;
@@ -22,10 +24,10 @@ export type Props = (
   center?: boolean;
   fill?: boolean;
   noDrag?: boolean;
-  oneLine?: boolean;
 };
 
 export default ({
+  component = `span`,
   xxSmall,
   xSmall,
   small,
@@ -42,11 +44,10 @@ export default ({
   center,
   fill,
   noDrag,
-  oneLine,
   ...props
-}: Props) => {
+}: TextProps) => {
   const css: CSSObject = {
-    // fontFamily: `Noto Sans KR`,
+    fontFamily: `Noto Sans KR`,
     ...colors[color || `black`],
     ...fontSizes[
       (xxSmall && `xxSmall`) ||
@@ -69,12 +70,7 @@ export default ({
     ...(center && { textAlign: `center` }),
     ...(fill && { flex: 1 }),
     ...(noDrag && { userSelect: `none` }),
-    ...(oneLine && {
-      whiteSpace: `nowrap`,
-      textOverflow: `ellipsis`,
-      overflow: `hidden`,
-    }),
   };
 
-  return jsx(`span`, { css, ...props });
+  return jsx(component, { css, ...props });
 };

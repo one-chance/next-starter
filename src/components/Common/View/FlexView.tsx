@@ -1,14 +1,15 @@
 import { CSSObject } from '@emotion/react';
 import { forwardRef } from 'react';
 
-import View, { Props as ViewProps } from './View';
+import View, { type ViewProps } from './View';
 
-export type Props = ViewProps & {
+export type FlexViewProps = ViewProps & {
   fill?: boolean;
   row?: boolean;
   center?: boolean;
   wrap?: boolean;
   fixed?: boolean;
+  grid?: boolean;
   gap?: number;
   content?: 'start' | 'end' | 'center' | 'between' | 'around';
   items?: 'start' | 'end' | 'center';
@@ -30,25 +31,30 @@ const alignItems = {
 
 const fixedCSS: CSSObject = {
   position: `fixed`,
-  top: 0,
+  top: `3rem`,
   left: 0,
   right: 0,
-  bottom: 0,
-  zIndex: 1000,
+  bottom: `3rem`,
 };
 
-const defaultCSS: CSSObject = {
-  display: `flex`,
-};
-
-// eslint-disable-next-line react/display-name
-export default forwardRef<HTMLDivElement, Props>(
+export default forwardRef<HTMLDivElement, FlexViewProps>(
   (
-    { fill, row, content, items, center, fixed, wrap, gap, ...props }: Props,
+    {
+      fill,
+      row,
+      content,
+      items,
+      center,
+      fixed,
+      wrap,
+      grid,
+      gap,
+      ...props
+    }: FlexViewProps,
     ref,
   ) => {
     const css: CSSObject = {
-      ...defaultCSS,
+      ...(grid ? { display: `grid` } : { display: `flex` }),
       ...(fill && { flex: 1 }),
       ...((row && { flexDirection: `row` }) || { flexDirection: `column` }),
       ...(center && { justifyContent: `center`, alignItems: `center` }),

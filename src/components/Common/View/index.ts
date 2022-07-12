@@ -1,4 +1,4 @@
-import FlexView from './FlexView';
-import View from './View';
+import FlexView, { type FlexViewProps } from './FlexView';
+import View, { type ViewProps } from './View';
 
-export { FlexView, View };
+export { View, ViewProps, FlexView, FlexViewProps };

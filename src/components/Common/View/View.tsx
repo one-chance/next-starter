@@ -1,12 +1,11 @@
 import { jsx } from '@emotion/react';
 import { forwardRef, HTMLAttributes } from 'react';
 
-export type Props = HTMLAttributes<HTMLDivElement> & {
+export type ViewProps = HTMLAttributes<HTMLDivElement> & {
   component?: string;
 };
 
-// eslint-disable-next-line react/display-name
-export default forwardRef<HTMLDivElement, Props>(
-  ({ component = `div`, ...props }: Props, ref) =>
+export default forwardRef<HTMLDivElement, ViewProps>(
+  ({ component = `div`, ...props }: ViewProps, ref) =>
     jsx(component, { ref, ...props }),
 );

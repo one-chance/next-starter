@@ -1,11 +1,11 @@
 import { CSSObject } from '@emotion/react';
 import { ButtonHTMLAttributes } from 'react';
 
-export type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   fit?: boolean;
 };
 
-export default ({ type = `button`, fit, ...props }: Props) => {
+export default ({ type = `button`, fit, ...props }: ButtonProps) => {
   const css: CSSObject = {
     backgroundColor: `unset`,
     border: `none`,
@@ -28,8 +28,13 @@ export default ({ type = `button`, fit, ...props }: Props) => {
       filter: `opacity(50%)`,
       pointerEvents: `none`,
     },
-    ...(fit && { width: `fit-content` }),
   };
 
-  return <button css={css} type={type} {...props} />;
+  return (
+    <button
+      css={{ ...((fit && { width: `fit-content` }) || {}), ...css }}
+      type={type}
+      {...props}
+    />
+  );
 };
