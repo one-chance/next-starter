@@ -4,12 +4,13 @@ import { forwardRef, InputHTMLAttributes } from 'react';
 export type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
 const css: CSSObject = {
-  border: `none`,
+  // border: `none`,
   outline: `none`,
   background: `none`,
+  border: `1px solid lightgray`,
+  borderRadius: `4px`,
   lineHeight: `30px`,
   //   color: 'currentColor',
-  //   fontSize: FontSizes.medium,
   //   '::placeholder': {
   //     color: TextColors.textLight
   //   },

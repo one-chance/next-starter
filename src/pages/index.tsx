@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <Text>언어 변경</Text>
       </Button>
 
-      {/* <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} /> */}
+      <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} />
 
       <h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
