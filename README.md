@@ -4,13 +4,11 @@
 
 # <b> Next Starter </b>
 
-### A next starter based on typescript and emotion.
-
-### - This starter aims to provide a minimal base for building SSR website.
+### The Boilerplate aims to provide minimal base for building SSR website.
 
 <br >
 
-## 🏗 <b> Installation </b>
+## <b> Installation </b>
 
 ```
 yarn install
@@ -18,28 +16,34 @@ yarn install
 
 <br>
 
-## 🎬 <b> Available Scripts </b>
+## <b> Available Scripts </b>
 
-### 1. Start development server
+### 1. Start the app in development mode with hot-code reloading, source map.
 
 ```
-yarn start
+yarn dev
 ```
 
-### 2. Build the app for production
+### 2. Create an optimized production build of app.
 
 ```
 yarn build
 ```
 
-### 3. Apply prettier
+### 3. Start the app in production mode without hot-code reloading, source map.
+
+```
+yarn start
+```
+
+### 4. Run Prettier for all files
 
 ```
 yarn format
 yarn format:fix
 ```
 
-### 4. Apply eslint
+### 5. Run ESlint for all files
 
 ```
 yarn lint
@@ -47,22 +51,32 @@ yarn lint
 
 <br>
 
-## 📜 <b> Features </b>
+## <b> Features </b>
 
-- Emotion
-- Eslint, Prettier (airbnb-typescript)
-- Next-i18next (i18n)
-
-<br>
-
-## 🗂 <b> Components </b>
-
-- View, FlexView, Text, Input, Button, Form, Icon, Image, Svg
-
-- Accordion, Checkbox, Divider, TextField, Link, Modal, Select
+- React 18
+- Next.js
+- Typescript
+- Emotion - Create components with styles applied in CSS-in-JS method
+- Eslint, Prettier - Modify the code style based on airbnb-typescript styles guide
+- Next-i18next - Change the languge of text for internationalization
+- Path mapping - Import any file in src folder using the @ prefix
+- Husky, Lint-staged - update soon
 
 <br>
 
-## ✏️ <b> Author </b>
+## <b> Basic component </b>
+
+- Button, Divider, Form, Icon, Image, Input, Link, Svg, Text, View, FlexView
+- Modal(Portal), Layout
+
+<br>
+
+## <b> License </b>
+
+### This boilerplate is licensed under the MIT license.
+
+<br>
+
+## <b> Author </b>
 
 &nbsp;Woody Lee ([@one-chance](https://github.com/one-chance))
