@@ -23,12 +23,6 @@ const Home: NextPage = () => {
         <link href="/favicon.ico" rel="icon" />
       </Head>
 
-      <Button onClick={() => router.push(`/test`)}>
-        <Text>언어 변경</Text>
-      </Button>
-
-      <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} />
-
       <h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
