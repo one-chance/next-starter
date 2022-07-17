@@ -18,32 +18,32 @@ yarn install
 
 ## <b> Available Scripts </b>
 
-### 1. Start the app in development mode with hot-code reloading, source map.
+### Start the app in development mode with hot-code reloading, source map.
 
 ```
 yarn dev
 ```
 
-### 2. Create an optimized production build of app.
+### Create an optimized production build of app.
 
 ```
 yarn build
 ```
 
-### 3. Start the app in production mode without hot-code reloading, source map.
+### Start the app in production mode without hot-code reloading, source map.
 
 ```
 yarn start
 ```
 
-### 4. Run Prettier for all files
+### Run Prettier for all files
 
 ```
 yarn format
 yarn format:fix
 ```
 
-### 5. Run ESlint for all files
+### Run ESlint for all files
 
 ```
 yarn lint
