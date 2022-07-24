@@ -52,15 +52,6 @@ export const BreakPoints = {
   xl: 1200,
 };
 
-export const colors: { [key: string]: CSSObject } = {
-  primary: { color: `#358CFE` },
-  black: { color: `#515355` },
-  white: { color: `#FFFFFF` },
-  green: { color: `#79cb20` },
-  red: { color: `#FB4E4E` },
-  gray: { color: `#BEBFC0` },
-};
-
 export const Colors = {
   primary: `#358CFE`,
   black: `#515355`,
@@ -104,6 +95,7 @@ const etc: CSSObject = {
   },
   '*': {
     boxSizing: `border-box`,
+    fontFamily: `Noto Sans KR`,
   },
 };
 
@@ -113,7 +105,9 @@ export const globalStyles: CSSObject = {
     backgroundColor: `#F3F4F8`,
   },
   body: {
-    ...body,
+    // ...body,
+    width: `100vw`,
+    minHeight: `100vh`,
     margin: 0,
   },
   main: {

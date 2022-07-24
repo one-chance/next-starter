@@ -1,5 +1,5 @@
 import { CSSObject, jsx } from '@emotion/react';
-import { colors, fontSizes, fontWeights } from '@styles/Theme';
+import { fontSizes, fontWeights } from '@styles/Theme';
 import { HTMLAttributes, LabelHTMLAttributes } from 'react';
 
 export type TextProps = (
@@ -47,7 +47,7 @@ export default ({
 }: TextProps) => {
   const css: CSSObject = {
     fontFamily: `Noto Sans KR`,
-    ...colors[color || `black`],
+    color: color || `black`,
     ...fontSizes[
       (xxSmall && `xxSmall`) ||
         (xSmall && `xSmall`) ||

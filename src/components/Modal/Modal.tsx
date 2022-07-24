@@ -21,12 +21,12 @@ const backgoundCSS: CSSObject = {
   backgroundColor: `rgba(0, 0, 0, 0.3)`,
 };
 
-type ModalProps = {
+interface ModalProps {
   width?: number;
   height?: number;
   children: ReactNode;
   closePortal: () => void;
-};
+}
 
 export default ({ width, height, children, closePortal }: ModalProps) => {
   const container = document.getElementById(`root-modal`);
