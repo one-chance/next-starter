@@ -1,16 +1,16 @@
-import { CSSObject } from '@emotion/react';
+import { CSSObject, jsx } from '@emotion/react';
 import { forwardRef, InputHTMLAttributes } from 'react';
 
 export type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
 const css: CSSObject = {
-  // border: `none`,
+  border: `none`,
   outline: `none`,
   background: `none`,
-  border: `1px solid lightgray`,
-  borderRadius: `4px`,
   lineHeight: `30px`,
+  padding: `0 8px`,
   //   color: 'currentColor',
+  //   fontSize: FontSizes.normal,
   //   '::placeholder': {
   //     color: TextColors.textLight
   //   },
@@ -26,10 +26,10 @@ const css: CSSObject = {
     appearance: `none`,
   },
   ':focus': {
-    outline: 0,
+    outline: `none`,
   },
 };
 
-export default forwardRef<HTMLInputElement, InputProps>((props, ref) => (
-  <input ref={ref} css={css} {...props} />
-));
+export default forwardRef<HTMLInputElement, InputProps>((props, ref) =>
+  jsx(`input`, { ref, css, ...props }),
+);
