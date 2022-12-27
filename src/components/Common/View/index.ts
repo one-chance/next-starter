@@ -1,4 +1,12 @@
 import FlexView, { FlexViewProps } from './FlexView';
+import GridView, { GridViewProps } from './GridView';
 import View, { ViewProps } from './View';
 
-export { View, type ViewProps, FlexView, type FlexViewProps };
+export {
+  FlexView,
+  type FlexViewProps,
+  GridView,
+  type GridViewProps,
+  View,
+  type ViewProps,
+};
