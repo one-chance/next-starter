@@ -1,29 +1,17 @@
-import { Button, ButtonProps } from './Button';
-import { Divider } from './Divider';
-import { Form } from './Form';
-import { Icon } from './Icon';
-import { Image } from './Image';
-import { Input, InputProps } from './Input';
-import { Link } from './Link';
-import { Svg } from './Svg';
-import { Text, TextProps } from './Text';
-import { FlexView, GridView, View, ViewProps } from './View';
-
+export { Button, type ButtonProps } from './button';
+export { Divider } from './divider';
+export { Link } from './link';
+export { Form } from './form';
+export { Icon } from './icon';
+export { Image } from './image';
+export { Input, type InputProps } from './input';
+export { Svg } from './svg';
+export { Text, type TextProps } from './text';
 export {
-  Button,
-  type ButtonProps,
-  Divider,
   FlexView,
-  Form,
+  type FlexViewProps,
   GridView,
-  Icon,
-  Image,
-  Input,
-  type InputProps,
-  Link,
-  Svg,
-  Text,
-  type TextProps,
+  type GridViewProps,
   View,
   type ViewProps,
-};
+} from './view';
